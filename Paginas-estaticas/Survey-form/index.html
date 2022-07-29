@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Survey Form</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30a937ae38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class='container'>
+  <header class='header'>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <form id="survey-form">
+    <div class='form-group'>
+      <label id='name-label' class='label'>Name</label>
+      <input type = 'text' id='name' placeholder='Enter your name' required>
+    </div>
+    <div class='form-group'>
+      <label id='email-label' class='label'>Email</label>
+      <input type = 'email' id='email' placeholder='Enter your email' required >
+    </div>
+    <div class='form-group'>  
+      <label id='number-label' class='label'>Age</label>
+      <input type = 'number' id='number' placeholder='Enter your age' required >
+    </div>
+    <div class='form-group'>      
+      <p>Select your current role</p>
+      <select id='dropdown' class='form-control'>
+        <option disabled selected value >Select option</option>
+        <option value='student'>Student</option>
+        <option value='teacher'>Teacher</option>
+        <option value='job'>Full time job</option>
+        <option value='learner'>Full time learner</option>
+      </select>
+    </div>
+    <div class='form-group'>
+        <p>What is the thing you most like about coding? <span class='clue'>(select all that aply)</span>
+        </p>  
+        <label class='label'>
+            <input type='radio' value='universal-language' class='input-radio'>
+            Coding is a universal language.
+        </label>
+        <label class='label'>
+            <input type='radio' value='improve-career'  class='input-radio'>
+            Coding can improve career prospects.
+        </label>
+        <label class='label'>
+            <input type='radio' value='universal-language'  class='input-radio'>
+            Coding is a universal language.
+        </label>
+    </div>
+    <div class='form-group'>
+      <p>Have you ever learnt how to code?</p>
+      <label class='label'>
+        <input type='radio' value='yes' name='user-know' class = 'input-radio' checked>
+        Yes
+      </label>
+      <label class='label'>
+        <input type='radio' value='no' name='user-know' class = 'input-radio'>
+        No
+      </label>
+    </div>
+    <div class='form-group'>
+      <p>
+        If you have, select wich or wich ones of these languages you know (at least the basics)
+      </p>
+      <label class='label'>
+        <input type='radio' value='javascript'>
+        JavaScript
+      </label>
+      <label class='label'>
+        <input type='radio' value='css'>
+        CSS
+      </label>
+      <label class='label'>
+        <input type='radio' value='html'>
+        HTML
+      </label>
+      <label class='label'>
+        <input type='radio' value='python'>
+        Python
+      </label>
+      <label class='label'>
+        <input type='radio' value='php'>
+        PHP
+      </label>
+    </div>
+    <div class='form-group'>
+      <p>
+        How did you come up with freeCodeCamp?
+      </p>
+      <select id='come-up'>
+        <option disabled selected value> Select Option</option> 
+        <option value='email'> I received an email</option>
+        <option value='ig'> I saw it on instagram</option>
+        <option value='friend'> A friend of mine told me</option>
+        <option value='none'> None of the above</option>
+      </select>
+      <p>If none of the above, please write down how you reached us</p>
+      <textarea class='textarea' placeholder='Write here'></textarea>
+    </div>
+    <div class='form-group'>
+      <p>Any comments or suggestions?</p>
+      <textarea class='textarea' placeholder='Enter your comments here '></textarea>
+    </div>
+    <div class='form-group'>
+        <input type="submit" value="Submit" class="submit-btn">
+    </div>
+    </form>
+</div>
+<script src="codigo.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-rows: .5fr 4fr;
+
+
+}
+body{
+	background: #000;
+	margin: 0 80px;
+}
+
+/*HEADER*/
+
+.header{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	padding-top: 10px;
+	border-bottom: 3px double #fff;
+
+}
+.logo{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width:45px ;
+	padding-bottom: 3px;
+}
+.logo__imagen{
+	
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 50%;
+	
+
+}
+.nav{
+	display: flex;
+	justify-content: space-evenly;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	padding-right: 90px;
+}
+.nav a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+}
+.nav a:hover{
+	color: #bbb;
+	border-bottom: 3px solid #fff;
+}
+
+.buscador{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.buscador .fa-solid{
+	color: #fff;
+	padding-right: 10px;
+}
+.buscador .fa-solid:hover{
+	color: #bbb;
+	cursor: pointer;
+}
+
+
+/*MAIN*/
+
+.main{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.imagenes .imagen {
+		width: 100%;
+		padding: 20px 20vh;
+	}
+
+	.circulos .fa-solid{
+		color: #aaa;
+		font-size: 1.2em;
+	}
+	.circulos .fa-solid:hover{
+		color: #444;
+	}
+	.textos{
+		color: #eee;
+		
+	}
+	h1{
+		font-size: 2.5em;
+		text-align: center;
+		margin: 10px 0 5px 0;
+	}
+	p{
+		font-size: 1.5em;
+		line-height: 30px;
+	}
